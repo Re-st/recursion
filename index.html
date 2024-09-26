@@ -5,12 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursion World</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
-      <h1>재귀 세상</h1>
-      <h2>손</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/DrawingHands.jpg" alt="Drawing Hands by M.C. Escher">
+      <h1>돌고도는 세상</h1>
+      <div class="content-box">
+        <h2>손</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/DrawingHands.jpg" alt="Drawing Hands by M.C. Escher">
+      </div>
+
+      <div class="content-box">
+        <h2>눈</h2>
+        <iframe src="https://giphy.com/embed/qoJ9sZu2Xui9a" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
+
+      <div class="content-box">
+        <h2>게</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/36ykl2tJwZM?si=HNqEz2eP8S6SHRPF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="content-box">
+        <h2>뱀</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Ouroboros.png/250px-Ouroboros.png" alt="Ouroboros">
+      </div>
+
+      <div class="content-box">
+        <h2>코드</h2>
+        <pre><code class="language-ocaml">
+(fun x -> Printf.printf "%s %S" x x) "(fun x -> Printf.printf \"%s %S\" x x)"
+        </code></pre>
+        <!-- Prism.js JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <!-- Prism.js for OCaml -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-ocaml.min.js"></script>
+      </div>
+
     </div>
   </body>
 </html>
