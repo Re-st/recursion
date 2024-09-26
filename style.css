@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+.recursion-box, .inner-box, .inner-inner-box {
+  border: 2px solid #3498db;
+  padding: 20px;
+  margin: 20px auto;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #ecf0f1;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inner-box, .inner-inner-box {
+  border-color: #e74c3c;
+  width: 150px;
+}
+
+.inner-inner-box {
+  border-color: #2ecc71;
+  width: 100px;
+}
