@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>recursively ...</title>
-    <meta http-equiv="refresh" content="0; URL='http://recursion.kaist.ac.kr'" />
+    <title>recursively...</title>
+    <script>
+        // Function to perform the redirect
+        function redirect() {
+            window.location.href = 'http://recursion.kaist.ac.kr';
+        }
+
+        // Set a timeout to call the redirect function after 5 seconds
+        setTimeout(redirect, 5000);
+
+        // Function to update the countdown
+        function updateCountdown() {
+            var countdown = document.getElementById('countdown');
+            var seconds = parseInt(countdown.textContent);
+            if (seconds > 0) {
+                countdown.textContent = seconds - 1;
+                setTimeout(updateCountdown, 1000);
+            }
+        }
+
+        // Start the countdown when the page loads
+        window.onload = function() {
+            updateCountdown();
+        };
+    </script>
 </head>
 <body>
-    <p>Visit recursion world <a href="http://recursion.kaist.ac.kr">recursively</a></p>
+    <p>visiting <a href="https://example.com">the recursion world</a> in <span id="countdown">5</span> seconds</p>
 </body>
 </html>
