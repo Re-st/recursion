@@ -1,84 +1,97 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursion World</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>돌고 도는 세상</h1>
-      <div class="content-box">
-        <h2>손</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/DrawingHands.jpg" style="width:50%" alt="Drawing Hands by M.C. Escher">
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recursion World</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>돌고 도는 세상</h1>
+    <div class="content-box">
+      <h2>손</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/DrawingHands.jpg" style="width:50%" alt="Drawing Hands by M.C. Escher">
+    </div>
 
-      <div class="content-box">
-        <h2>눈</h2>
-        <iframe src="https://giphy.com/embed/qoJ9sZu2Xui9a" width="480" height="480" style="width:50%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-      </div>
+    <div class="content-box">
+      <h2>눈</h2>
+      <iframe src="https://giphy.com/embed/qoJ9sZu2Xui9a" width="480" height="480" style="width:50%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
 
-      <div class="content-box">
-        <h2>말</h2>
-        <blockquote>
-          "이 말은 거짓말이다."
-          <cite>–돌도사</cite>
-        </blockquote>
-      </div>
+    <div class="content-box">
+      <h2>말</h2>
+      <blockquote>
+        "이 말은 거짓말이다."
+        <cite>–돌도사</cite>
+      </blockquote>
+    </div>
 
-      <div class="content-box">
-        <h2>게</h2>
-        <iframe width="80%" height="315" src="https://www.youtube.com/embed/36ykl2tJwZM?si=HNqEz2eP8S6SHRPF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
+    <div class="content-box">
+      <h2>게</h2>
+      <iframe width="80%" height="315" src="https://www.youtube.com/embed/36ykl2tJwZM?si=HNqEz2eP8S6SHRPF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
-      <div class="content-box">
-        <h2>뱀</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Ouroboros.png/250px-Ouroboros.png" style="width:50%" alt="Ouroboros">
-      </div>
+    <div class="content-box">
+      <h2>뱀</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Ouroboros.png/250px-Ouroboros.png" style="width:50%" alt="Ouroboros">
+    </div>
 
-      <div class="content-box">
-        <h2>시</h2>
-        <div class="poem">
-          <h3>건축무한육면각체</h3>
-          <div class="poet">
-            <p>이상</p>
-          </div>
-          <p>사각형의내부의사각형의내부의사각형의내부의사각형의내부의사각형</p>
-          <p>사각이난원운동의사각이난원운동의사각이난원</p>
-          <p>비누가통과하는혈관의비눗내를투시하는사람</p>
-          <p>지구를모형으로만들어진지구의를모형으로만들어진지구</p>
-          <p>...(후략)</p>
+    <div class="content-box">
+      <h2>시</h2>
+      <div class="poem">
+        <h3>건축무한육면각체</h3>
+        <div class="poet">
+          <p>이상</p>
         </div>
-        </blockquote>
+        <p>사각형의내부의사각형의내부의사각형의내부의사각형의내부의사각형</p>
+        <p>사각이난원운동의사각이난원운동의사각이난원</p>
+        <p>비누가통과하는혈관의비눗내를투시하는사람</p>
+        <p>지구를모형으로만들어진지구의를모형으로만들어진지구</p>
+        <p>...(후략)</p>
       </div>
+      </blockquote>
+    </div>
 
-      <div class="content-box">
-        <h2>코드</h2>
-        <pre><code class="language-ocaml">
+    <div class="content-box">
+      <h2>코드</h2>
+      <pre><code class="language-ocaml">
 (fun x -> Printf.printf "%s %s" x x) "(fun x -> Printf.printf \"%s %s\" x x)"
         </code></pre>
-        <!-- Prism.js JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-        <!-- Prism.js for OCaml -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-ocaml.min.js"></script>
-      </div>
-
-      <div class="content-box">
-        <h2>여기</h2>
-        <a href="./index.html"><iframe src="./index.html" title="돌고도는 세상" style="width:80%; height:500px; border:2px maroon"></iframe></a>
-      </div>
-
-      <div class="content-box">
-        <h2>다음</h2>
-        <p>다음 단계로 진행하려면 아래 버튼을 클릭하세요.</p>
-        <a href="recursion.html" class="next-button">다음 페이지로 이동</a>
-      </div>
-
-      <footer class="footer">
-        <p><a href="prosys.kaist.ac.kr">KAIST 프로그래밍시스템 연구실</a> 제작</p>
-      </footer>
+      <!-- Prism.js JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+      <!-- Prism.js for OCaml -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-ocaml.min.js"></script>
     </div>
-  </body>
+
+    <div class="content-box">
+      <h2>여기</h2>
+      <a href="./index.html">
+        <iframe id="embed" src="./index.html" title="돌고도는 세상" style="width:80%; height:500px; border:2px maroon"></iframe>
+        <script>
+          <!-- make it stop after 2 times -->
+          const iframeEl = document.getElementById("embed");
+          const nextQueryValue = !location.search ? 1 : Number(location.search.split("?").pop()) + 1;
+          if (nextQueryValue > 2) {
+            iframeEl.src = "toomuch.html";
+          } else {
+            iframeEl.src = `./index.html?${nextQueryValue}`;
+          }
+        </script>
+      </a>
+    </div>
+
+    <div class="content-box">
+      <h2>다음</h2>
+      <p>다음 단계로 진행하려면 아래 버튼을 클릭하세요.</p>
+      <a href="recursion.html" class="next-button">다음 페이지로 이동</a>
+    </div>
+
+    <footer class="footer">
+      <p><a href="prosys.kaist.ac.kr">KAIST 프로그래밍시스템 연구실</a> 제작</p>
+    </footer>
+  </div>
+</body>
+
 </html>
