@@ -67,20 +67,7 @@
 
       <div class="content-box">
         <h2>여기</h2>
-        <a href="./index.html">
-          <iframe id="embed" src="./index.html" title="돌고도는 세상" style="width:80%; height:500px; border:2px maroon"></iframe>
-          <script>
-            <!-- make it stop after 10 times -->
-            const iframeEl = document.getElementById("embed");
-            const nextQueryValue = !location.search ? 1 :
-              Number(location.search.split("?").pop()) + 1;
-            if (nextQueryValue > 10) {
-              iframeEl.src = "index.html";
-            } else {
-              iframeEl.src = `./index.html?${nextQueryValue}`;
-            }
-          </script>
-        </a>
+        <a href="./index.html"><iframe src="./index.html" title="돌고도는 세상" style="width:80%; height:500px; border:2px maroon"></iframe></a>
       </div>
 
       <div class="content-box">
